@@ -24,6 +24,36 @@ export class ProductController {
       [name, price, quantity, id]
     );
 
-    return response.json("Produto cadastrado com sucesso")
+    return response.json("Produto cadastrado com sucesso");
+  }
+
+  async index(request: Request, response: Response) {
+    try {
+      const database = await sqliteConnection();
+
+      const products = await database.all("SELECT name, price, image FROM products");
+
+      response.json(products);
+    } catch (e) {
+      if (e instanceof AppError) {
+        response.status(e.statusCode).json(e.message);
+      }
+    };
+  }
+
+  async show(request: Request, response: Response) {
+    try {
+      const { id } = request.params;
+
+      const database = await sqliteConnection();
+
+      const product = await database.get("SELECT name, price, quantity FROM products WHERE id = ?", [id]);
+
+      response.json(product);
+    } catch(e) {
+      if(e instanceof AppError) {
+        response.status(e.statusCode).json(e.message);
+      }
+    }
   }
 }
