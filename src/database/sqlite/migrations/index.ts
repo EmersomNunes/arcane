@@ -11,9 +11,7 @@ export async function migrationsRun() {
   try {
     const db = await sqliteConnection();
     for (const schema of schemas) {
-      console.log("Executing schema:", schema);
       await db.exec(schema);
-      console.log("Schema executed successfully.");
     }
   } catch (error) {
     console.error("Error executing schemas:", error);

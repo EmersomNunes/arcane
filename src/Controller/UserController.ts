@@ -31,7 +31,7 @@ export class UserController {
 
       const hashPassword = await bcrypt.hash(password, 8);
 
-      await database.run("INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
+      await database.run(`INSERT INTO users (name, email, password) VALUES (?, ?, ?)`,
         [name, email, hashPassword]
       );
 

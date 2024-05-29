@@ -5,6 +5,7 @@ export const createProducts = `
     price REAL,
     image VARCHAR,
     user_id INTEGER,
+    quantity INTEGER,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
