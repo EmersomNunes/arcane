@@ -4,5 +4,5 @@ import { productRouter } from "./product.routes";
 
 export const routes = Router();
 
-routes.use("/users", userRouter);
-routes.use("/products", productRouter);
+routes.use("/api/users", userRouter);
+routes.use("/api/products", productRouter);

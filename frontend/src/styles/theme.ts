@@ -1,0 +1,9 @@
+export const COLORS = {
+  "BACKGROUND_HEADER": "#341647",
+  "BACKGROUND_OFFERS": "#180A33",
+  "BACKGROUND_BUTTON": "#794ECD",
+
+
+  "WHITE": "#ffff",
+  "BUTTON_TEXT": "#BE57DA"
+}

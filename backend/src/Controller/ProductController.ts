@@ -31,7 +31,7 @@ export class ProductController {
     try {
       const database = await sqliteConnection();
 
-      const products = await database.all("SELECT name, price, image FROM products");
+      const products = await database.all("SELECT name, price, id, image FROM products");
 
       response.json(products);
     } catch (e) {
