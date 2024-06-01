@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
+  position: fixed;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -28,6 +30,8 @@ export const Container = styled.header`
   }
 
   @media (max-width: 800px) {
+    padding: 3rem 1rem;
+
     > div {
       button {
         display: none;
@@ -35,6 +39,10 @@ export const Container = styled.header`
 
       .login {
         display: none;
+      }
+
+      a:last-child {
+        margin-right: 4rem;
       }
     }
   }

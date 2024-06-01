@@ -3,6 +3,7 @@ import { fallDown as Menu } from 'react-burger-menu';
 import { Container } from "./styles";
 import { FaUserCircle } from "react-icons/fa";
 
+
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 800);

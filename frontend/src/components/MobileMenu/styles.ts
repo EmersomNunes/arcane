@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 100vh;
 
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   text-align: center;
   top: 0;
 
@@ -20,8 +20,8 @@ export const Container = styled.div`
     position: fixed;
     width: 35px;
     height: 25px;
-    right: 1rem;
     top: 4.3rem;
+    right: 1rem;
   }
 
   .bm-burger-bars {
