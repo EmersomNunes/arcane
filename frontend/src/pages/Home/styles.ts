@@ -63,11 +63,23 @@ export const Banner = styled.div`
       }
 
       .buyNow {
+        width: 14.5rem;
+        height: 4.4rem;
         background-color: ${({ theme }) => theme.COLORS.WHITE};
         color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON};
+        border: 3px solid white;
 
         margin-top: 3rem;
         font-weight: bold;
+        border-radius: 2rem;
+        transition: 0.4s ease;
+      }
+
+      .buyNow:hover {
+        border: 3px solid white;
+        background-color: transparent;
+        color: ${({ theme }) => theme.COLORS.WHITE};
+
       }
     }
 
