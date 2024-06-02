@@ -4,14 +4,13 @@ import { AppError } from "../utils/AppError";
 
 export class ProductController {
   async create(request: Request, response: Response) {
-    const { name, price, quantity } = request.body;
-    const { id } = request.params;
+    const { name, price, quantity, image } = request.body;
 
     const database = await sqliteConnection();
 
     const productExists = await database.get(`
-    SELECT * FROM products WHERE name = ? AND user_id = ?`,
-      [name, id]
+    SELECT * FROM products WHERE name = ?`,
+      [name]
     );
 
     if (productExists) {
@@ -19,9 +18,9 @@ export class ProductController {
     };
 
     await database.run(`INSERT INTO products
-     (name, price, quantity, user_id)
+     (name, price, quantity, image)
       VALUES (?, ?, ?, ?)`,
-      [name, price, quantity, id]
+      [name, price, quantity, image]
     );
 
     return response.json("Produto cadastrado com sucesso");
