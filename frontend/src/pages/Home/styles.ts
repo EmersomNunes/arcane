@@ -14,6 +14,25 @@ export const Container = styled.div`
     width: 20rem;
     height: 4rem;
   }
+
+  .cards {
+    > h1 {
+      margin: 10rem 10rem;
+      font-size: 4.2rem;
+    }
+
+    .card {
+      display: flex;
+    }
+
+    .card img {
+      transition: transform 0.6s ease;
+    }
+
+    .card div:hover img {
+      transform: scale(1.1);
+  }
+  }
 `;
 
 export const Banner = styled.div`

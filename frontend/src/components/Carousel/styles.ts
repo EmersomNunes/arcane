@@ -14,6 +14,7 @@ export const Container = styled.div`
     .slide {
       display: flex;
       justify-content: center;
+      cursor: pointer;
 
       img {
         width: 39.5rem;
@@ -24,6 +25,11 @@ export const Container = styled.div`
         transition: transform 0.3s ease;
       }
     }
+
+  .slide:hover img {
+      transform: scale(1.1);
+      opacity: 85%;
+  }
 
     .desc {
       text-align: center;
@@ -55,11 +61,6 @@ export const Container = styled.div`
         transition: 0.2s ease;
       }
     }
-  }
-
-  .slide:hover img {
-    transform: scale(1.1);
-    opacity: 85%;
   }
 
   .buttonArrow {
