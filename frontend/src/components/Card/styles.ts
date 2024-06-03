@@ -9,6 +9,7 @@ export const Container = styled.div`
 export const CardItem = styled.div`
   width: 100%;
   display: flex;
+  padding-bottom: 13rem;
 
   div {
     height: 54rem;

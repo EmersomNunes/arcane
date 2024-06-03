@@ -6,6 +6,10 @@ export const Container = styled.div`
   height: 40rem;
   width: 60rem;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media(max-width: 1340px) {
     height: 30rem;
     width: 32rem;

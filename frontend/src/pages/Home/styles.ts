@@ -10,7 +10,6 @@ export const Container = styled.div`
   }
 
   button {
-    background-color: transparent;
     width: 20rem;
     height: 4rem;
   }
@@ -73,32 +72,13 @@ export const Banner = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE};
         font-size: 2rem;
         font-weight: 500;
+        margin-bottom: 3rem;
 
         > h1 {
           margin-top: 2.3rem;
           font-size: 7rem;
           line-height: 100%;
         }
-      }
-
-      .buyNow {
-        width: 14.5rem;
-        height: 4.4rem;
-        background-color: ${({ theme }) => theme.COLORS.WHITE};
-        color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON};
-        border: 3px solid white;
-
-        margin-top: 3rem;
-        font-weight: bold;
-        border-radius: 2rem;
-        transition: 0.4s ease;
-      }
-
-      .buyNow:hover {
-        border: 3px solid white;
-        background-color: transparent;
-        color: ${({ theme }) => theme.COLORS.WHITE};
-
       }
     }
 
@@ -142,15 +122,6 @@ export const Banner = styled.div`
           font-size: 5rem;
           text-align: center;
         }
-      }
-
-      .buyNow {
-        padding: 1.5rem;
-        border-radius: 2rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
     }
   }

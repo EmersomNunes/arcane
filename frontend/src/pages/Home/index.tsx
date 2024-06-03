@@ -9,6 +9,8 @@ import Cyber from "../../assets/Cyber.webp"
 import { BestSellers } from "../../components/BestSellers";
 import { Card } from "../../components/Card";
 import Console from "../../assets/Console.webp";
+import { OtherOffers } from "../../components/OtherOffers";
+import { UpgrateOffers } from "../../components/UpgrateOffer";
 
 interface ProductsType {
   id: number;
@@ -45,19 +47,16 @@ export function Home() {
                 Mais poder ao seu gaming
 
                 <h1>CYBER KID INFINITE</h1>
-                Disponível para PC e console
+                <span>Disponível para PC e console</span>
               </div>}
-            button={
-              <button
-                className="buyNow">
-                Comprar agora
-              </button>
-            }
+            buttonName="Comprar agora"
           />
           <img src={Cyber} alt="Imagem robotica" />
         </div>
       </Banner>
+      
       <BestSellers />
+
       <div className="cards">
         <h1>VEJA POR CATEGORIA</h1>
         
@@ -76,6 +75,9 @@ export function Home() {
           />
         </div>
       </div>
+
+      <OtherOffers />
+      <UpgrateOffers />
     </Container>
   );
 }

@@ -1,14 +1,13 @@
-import { Button } from "../Button";
 import { ButtonTransition } from "../ButtonTransition";
 import Carousel from "../Carousel";
 import { Container } from "./styles";
 
-export function BestSellers() {
+export function UpgrateOffers() {
   return (
     <Container>
-      <div className="title">
-        <h1>MAIS VENDIDOS</h1>
-        <ButtonTransition title="Ver tudo"/>
+      <div className="upgradeTitle">
+        <h1>DÊ UM UPGRADE NO SEU GEAR</h1>
+        <ButtonTransition title="Ver tudo" />
       </div>
       <Carousel />
     </Container>

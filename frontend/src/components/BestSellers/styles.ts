@@ -8,4 +8,13 @@ export const Container = styled.div`
   height: 100rem;
 
   padding: 25rem 10rem 10rem;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 13.2rem;
+    }
+  }
 `;

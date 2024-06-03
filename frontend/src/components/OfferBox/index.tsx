@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 import { Container } from "./style";
+import { ButtonTransition } from "../ButtonTransition";
 
-export function OfferBox({ title, button }: {title: ReactNode, button: ReactNode}) {
+export function OfferBox({ title, buttonName }: {title: ReactNode, buttonName: string}) {
   return(
     <Container>
       {title}
-      {button}
+      {<ButtonTransition title={buttonName}/>}
     </Container>
   );
 }

@@ -50,16 +50,6 @@ export const Container = styled.div`
         font-size: 1.8rem;
         margin: .8rem 0;
       }
-
-      > button {
-        width: 29rem;
-        margin-top: 1rem;
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON};
-        color: ${({ theme }) => theme.COLORS.WHITE};
-        border-radius: 2rem;
-
-        transition: 0.2s ease;
-      }
     }
   }
 
@@ -71,6 +61,7 @@ export const Container = styled.div`
     justify-content: space-between;
 
     width: max-content;
+    background-color: transparent;
   }
 
   .back {

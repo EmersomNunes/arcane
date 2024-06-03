@@ -4,7 +4,7 @@ export const Container = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_HEADER};
   position: fixed;
-  z-index: 1;
+  z-index: 99;
 
   display: flex;
   align-items: center;
@@ -57,6 +57,7 @@ export const Navegation = styled.div`
     width: max-content;
     display: flex;
     align-items: center;
+    background-color: transparent;
 
     padding: 1.5rem;
 
