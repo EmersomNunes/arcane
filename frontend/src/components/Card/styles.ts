@@ -14,12 +14,20 @@ export const Container = styled.div`
 export const CardItem = styled.div`
   width: 100%;
   display: flex;
-  padding-bottom: 13rem;
+  padding-bottom: 2rem;
 
-  div {
+  > div {
     height: 54rem;
     width: 40rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    text-align: center;
+    font-size: 2.2rem;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+
 
     img {
       border-radius: 2rem;
@@ -29,17 +37,19 @@ export const CardItem = styled.div`
       object-fit: cover;
     }
 
-    p {
-      text-align: center;
-      font-size: 2.2rem;
-      color: ${({ theme }) => theme.COLORS.WHITE};
-
-      margin-top: 2.5rem;
+    @media(max-width: 800px) {
+      height: 40rem;
     }
   }
 
   @media(max-width: 1675px) {
     padding-bottom: 0;
     justify-content: center;
+
+    div {
+      p {
+        color: ${({ theme }) => theme.COLORS.WHITE};
+      }
+    }
   }
 `;

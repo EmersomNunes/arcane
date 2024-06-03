@@ -22,6 +22,7 @@ export const Container = styled.div`
 
     .card {
       display: flex;
+      margin-bottom: 5rem;
     }
 
     .card img {
@@ -39,10 +40,16 @@ export const Container = styled.div`
     }
 
     .cards {
-
+      margin: 0;
      > h1 {
       text-align: center;
       margin: 0;
+      }
+
+      .card {
+        img {
+          height: 30rem;
+        }
       }
     }
   }
@@ -95,7 +102,6 @@ export const Banner = styled.div`
         }
       }
     }
-
 
 
   @media(max-width: 1340px) {

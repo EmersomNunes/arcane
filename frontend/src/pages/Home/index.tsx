@@ -54,28 +54,28 @@ export function Home() {
           <img src={Cyber} alt="Imagem robotica" />
         </div>
       </Banner>
-      
+
       <BestSellers />
 
       <div className="cards">
         <h1>VEJA POR CATEGORIA</h1>
-        
+
         <div className="card">
-          <Card 
-            title="Console" 
-            image={<img src={Console}/>}
+          <Card
+            image={Console}
+            title="Console"
           />
-          <Card 
-            title="Acessórios" 
-            image={<img src={Console}/>}
+          <Card
+            image={Console}
+            title="Acessórios"
           />
-          <Card 
-            title="Controles" 
-            image={<img src={Console}/>}
+          <Card
+            image={Console}
+            title="Controles"
           />
         </div>
       </div>
-
+      
       <OtherOffers />
       <UpgrateOffers />
     </Container>

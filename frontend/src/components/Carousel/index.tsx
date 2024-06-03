@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Container } from './styles';
@@ -6,7 +6,14 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import Console from "../../assets/Console.webp"
 import { Button } from '../Button';
 
-function Carousel () {
+interface CarouselTypes {
+  image: string;
+  name: string;
+  price?: string;
+  button?: ReactNode;
+}
+
+function Carousel ({ image, name, price, button }: CarouselTypes) {
   const [visibleSlides, setVisibleSlides] = useState(0);
 
   useEffect(() => {
@@ -35,11 +42,11 @@ function Carousel () {
         <Slider className='slider'>
           {Array.from({ length: 6 }).map((_, index) => (
             <Slide index={index} key={index}>
-              <div className='slide'><img src={Console} alt="" /></div>
+              <div className='slide'><img src={image} alt="" /></div>
               <div className='desc'>
-                <span>Headset L503</span>
-                <span>R$ 134,99</span>
-                <Button title='Adicionar' />
+                <span>{name}</span>
+                <span>{price}</span>
+                {button}
               </div>
             </Slide>
           ))}

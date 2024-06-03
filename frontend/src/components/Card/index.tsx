@@ -1,9 +1,8 @@
 import { Container, CardItem } from "./styles";
-import { ReactNode } from "react";
 
 interface CardType {
   title: string;
-  image: ReactNode
+  image: string
 }
 
 export function Card({ title, image }: CardType) {
@@ -11,8 +10,8 @@ export function Card({ title, image }: CardType) {
     <Container>
       <CardItem>
         <div>
-          {image}
-          <p>{title}</p>
+          <img src={image} alt="" />
+          {title}
         </div>
       </CardItem>
     </Container>

@@ -83,26 +83,28 @@ export const Container = styled.div`
     .container {
         > div {
         height: 40rem;
-        width: 60rem;
+        width: 32rem;
 
         margin: 0;
         z-index: 6;
       }
     }
+  }
 
-    @media(max-width: 800px) {
-      height: 100%;
 
-      .container {
-        padding: 0;
-        
-        > div {
-          display: none;
-        }
+  @media(max-width: 800px) {
+    height: 100%;
+    display: none;
 
-        > section {
-          display: none;
-        }
+    .container {
+      padding: 0;
+      
+      > div {
+        display: none;
+      }
+
+      > section {
+        display: none;
       }
     }
   }
