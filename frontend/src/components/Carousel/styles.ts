@@ -81,4 +81,10 @@ export const Container = styled.div`
   .back:hover, .next:hover {
     opacity: 50%;
   }
+
+  @media(max-width: 1800) {
+    .slider {
+      flex-direction: column;
+    }
+  }
 `;

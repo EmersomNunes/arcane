@@ -6,6 +6,8 @@ export const Container = styled.div`
   height: 100vh;
   position: relative;
 
+  margin-bottom: 18rem;
+
   .container {
       width: 100%;
       padding: 20rem 10rem 5rem 10rem;
@@ -30,13 +32,11 @@ export const Container = styled.div`
         font-weight: 500;
         text-align: center;
         margin-bottom: 3rem;
-
+        
         > h1 {
           margin-top: 3rem;
           font-size: 14rem;
           line-height: 85%;
-          font-family: "Montserrat", sans-serif;
-          
         }
 
         > h2 {
@@ -47,37 +47,63 @@ export const Container = styled.div`
       }
 
     > section {
-      display: flex;
+      img {
+        width: 38rem;
+        height: 50rem;
+        border-radius: 2rem;
 
-    img {
-      width: 38rem;
-      height: 50rem;
-      border-radius: 2rem;
+        box-shadow: 10px 5px 30px 2px #3e3e3e;
+      }
 
-      box-shadow: 10px 5px 30px 2px #3e3e3e;
-    }
+      .game1 {
+        position: absolute;
+        position: absolute;
+        right: 78rem;
+        top: 15rem;
+        z-index: 3;
+      }
 
-    .game1 {
-      position: absolute;
-      position: absolute;
-      right: 78rem;
-      top: 15rem;
-      z-index: 3;
-    }
-
-    .game3 {
-      position: absolute;
-      right: 8rem;
-      z-index: 3;
-      margin-top: 4rem;
-    }
+      .game3 {
+        position: absolute;
+        right: 8rem;
+        z-index: 3;
+        margin-top: 4rem;
+      }
     
-    .game2 {
-      position: absolute;
-      right: 43rem;
-      z-index: 2;
-      margin-top: 8rem;
+      .game2 {
+        position: absolute;
+        right: 43rem;
+        z-index: 2;
+        margin-top: 8rem;
+      }
     }
   }
+
+  @media(max-width: 1340px) {
+    .container {
+        > div {
+        height: 40rem;
+        width: 60rem;
+
+        margin: 0;
+        z-index: 6;
+      }
+    }
+
+    @media(max-width: 800px) {
+      height: 100%;
+
+      .container {
+        padding: 0;
+        
+        > div {
+          display: none;
+        }
+
+        > section {
+          display: none;
+        }
+      }
+    }
   }
 `;

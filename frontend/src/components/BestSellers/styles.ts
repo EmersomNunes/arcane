@@ -17,4 +17,12 @@ export const Container = styled.div`
       width: 13.2rem;
     }
   }
+
+  @media(max-width: 800px) {
+    .title {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
 `;

@@ -30,7 +30,21 @@ export const Container = styled.div`
 
     .card div:hover img {
       transform: scale(1.1);
+    }
   }
+
+  @media(max-width: 1700px) {
+    .card {
+      flex-direction: column;
+    }
+
+    .cards {
+
+     > h1 {
+      text-align: center;
+      margin: 0;
+      }
+    }
   }
 `;
 

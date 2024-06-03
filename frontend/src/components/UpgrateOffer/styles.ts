@@ -9,15 +9,16 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    button {
-      width: 13.2rem;
-      background-color: ${({ theme }) => theme.COLORS.WHITE};
-      
-      &:hover {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON};
-        color: ${({ theme }) => theme.COLORS.WHITE};
-      }
+    @media(max-width: 800px) {
+    padding: 3rem;
+    
+    .upgradeTitle {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
     }
   }
 `;

@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #262528;
+    background-color: black;
   }
 
   body, input, textarea, button {
