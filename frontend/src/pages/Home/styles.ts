@@ -9,11 +9,6 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  button {
-    width: 20rem;
-    height: 4rem;
-  }
-
   .cards {
     > h1 {
       margin: 10rem 10rem;
@@ -86,17 +81,18 @@ export const Banner = styled.div`
       > div {
         border-radius: 4rem;
         box-shadow: 4.23px 5px 20px rgba(0, 0, 0, 0.8);
-        padding: 4.5rem 10rem;
+        padding: 8rem 6rem 0;
       }
 
       .descriptionOffer {
+        width: 100%;
         color: ${({ theme }) => theme.COLORS.WHITE};
         font-size: 2rem;
         font-weight: 500;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         > h1 {
-          margin-top: 2.3rem;
+          margin-top: 1rem;
           font-size: 7rem;
           line-height: 100%;
         }

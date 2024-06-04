@@ -3,7 +3,7 @@ import { Header } from "../../components/Header";
 import { MobileMenu } from "../../components/MobileMenu";
 import banner from "../../assets/banner.webp";
 import { OfferBox } from "../../components/OfferBox";
-import Cyber from "../../assets/Cyber.webp"
+import Cyber from "../../assets/Cyber.webp";
 import { BestSellers } from "../../components/BestSellers";
 import { Card } from "../../components/Card";
 import Console from "../../assets/Console.webp";

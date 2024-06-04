@@ -10,6 +10,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  > button {
+    width: 20rem;
+    height: 4rem;
+  }
+
   @media(max-width: 1340px) {
     height: 30rem;
     width: 32rem;

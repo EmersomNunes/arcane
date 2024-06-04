@@ -13,9 +13,14 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
 
-    button {
+    > button {
       width: 13.2rem;
     }
+  }
+
+  button {
+      width: 34rem;
+      height: 3.8rem;
   }
 
   @media(max-width: 800px) {
