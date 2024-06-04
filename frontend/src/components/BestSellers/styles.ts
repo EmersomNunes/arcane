@@ -21,6 +21,7 @@ export const Container = styled.div`
   button {
       width: 34rem;
       height: 3.8rem;
+      margin-top: 2rem;
   }
 
   @media(max-width: 800px) {

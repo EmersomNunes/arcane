@@ -29,6 +29,11 @@ export const Container = styled.div`
     }
   }
 
+  .sendEmail {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
   @media(max-width: 1700px) {
     .card {
       flex-direction: column;

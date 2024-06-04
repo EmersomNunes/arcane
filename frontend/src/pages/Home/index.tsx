@@ -9,6 +9,9 @@ import { Card } from "../../components/Card";
 import Console from "../../assets/Console.webp";
 import { OtherOffers } from "../../components/OtherOffers";
 import { UpgrateOffers } from "../../components/UpgrateOffer";
+import { TrandingGames } from "../../components/TrendingGames";
+import { Footer } from "../../components/Footer";
+import BackgroundBeforeFooter from "../../assets/BackgroundBeforeFooter.webp"
 
 export function Home() {
   return (
@@ -52,9 +55,14 @@ export function Home() {
           />
         </div>
       </div>
-      
+
       <OtherOffers />
       <UpgrateOffers />
+      <TrandingGames />
+      <div className="sendEmail">
+        <img src={BackgroundBeforeFooter} alt="Imagem decorativa" />
+      </div>
+      <Footer />
     </Container>
   );
 }

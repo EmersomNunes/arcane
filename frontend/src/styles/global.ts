@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  h1 {
+  h1, h2 {
     font-family: "Montserrat", sans-serif;
   }
 `;
