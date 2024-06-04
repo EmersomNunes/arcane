@@ -4,13 +4,15 @@ export const Container = styled.div`
   background-color: black;
   color: ${({ theme }) => theme.COLORS.WHITE};  
 
+  > button {
+      width: 13.2rem;
+    }
+
   .contain {
     padding: 0rem 10rem 5rem;
 
-    button {
-      width: 34rem;
-      height: 3.8rem;
-      margin-top: 2rem;
+    @media(max-width: 800px) {
+      padding: 3rem 3rem 0;
     }
   }
 
@@ -25,13 +27,24 @@ export const Container = styled.div`
   }
 
     @media(max-width: 800px) {
-    padding: 3rem;
+    padding: 0;
     
     .upgradeTitle {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
       text-align: center;
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  @media(max-width: 800px) {
+    button {
+      width: 20rem;
+      height: 3.8rem;
     }
   }
 `;
@@ -78,5 +91,37 @@ export const Banner = styled.div`
     width: 100%;
     height: 51rem;
     object-fit: cover;
+  }
+
+  @media(max-width: 800px) {
+    > div {
+      width: 100%;
+      position: absolute;
+      display: inline-block;
+      text-align: center;
+      top: 20%;
+      right: auto;
+
+      > h1 {
+      font-size: 3rem;
+      }
+
+      > p {
+        font-size: 1.8rem;
+      }
+
+      > button {
+        height: 3rem;
+        font-size: 1.2rem;
+        width: 11rem;
+      }
+    }
+
+    > img {
+        width: 100%;
+        height: 22.5rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
   }
 `;

@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
+  width: 100%;
 
   position: absolute;
-  z-index: 3;
+  z-index: 100;
   text-align: center;
   top: 0;
 
@@ -21,7 +22,7 @@ export const Container = styled.div`
     width: 35px;
     height: 25px;
     top: 4.3rem;
-    right: 1rem;
+    right: 3rem;
   }
 
   .bm-burger-bars {

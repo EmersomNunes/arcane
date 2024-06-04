@@ -38,4 +38,10 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2 {
     font-family: "Montserrat", sans-serif;
   }
+
+  @media(max-width: 800) {
+    body {
+    overflow-x: hidden;
+    }
+  }
 `;

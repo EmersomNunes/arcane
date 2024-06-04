@@ -42,7 +42,7 @@ export const Container = styled.header`
       }
 
       a:last-child {
-        margin-right: 4rem;
+        padding-right: 8rem;
       }
     }
   }

@@ -27,11 +27,21 @@ export const Container = styled.div`
   @media(max-width: 800px) {
     padding: 3rem 3rem 0;
     height: 80rem;
+    margin: 20rem 0 5rem;
+    text-align: center;
+
+    button {
+      width: 20rem;
+  }
 
     .title {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
+
+      h1 {
+        font-size: 2.4rem;
+      }
     }
   }
 `;

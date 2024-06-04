@@ -21,4 +21,21 @@ export const Container = styled.div`
       height: 4rem;
     }
   }
+
+  @media(max-width: 800px) {
+    padding: 0 3rem 3rem;
+    button {
+      width: 20rem;
+      height: 3.8rem;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  }
 `;

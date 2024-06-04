@@ -32,6 +32,10 @@ export const Container = styled.div`
   .sendEmail {
     width: 100%;
     margin-top: 6rem;
+
+    > img {
+      width: 100%;
+    }
   }
 
   @media(max-width: 1700px) {
@@ -42,8 +46,9 @@ export const Container = styled.div`
     .cards {
       margin: 0;
      > h1 {
-      text-align: center;
-      margin: 0;
+        text-align: center;
+        margin: 0;
+        font-size: 2.4rem;
       }
 
       .card {
@@ -58,7 +63,7 @@ export const Container = styled.div`
 export const Banner = styled.div`
   width: 100%;
   height: 80rem;
-  overflow: hidden; 
+  overflow: hidden;
 
   img {
     width: 100%;
