@@ -1,9 +1,9 @@
-import { ButtonTransition } from "../ButtonTransition";
-import Carousel from "../Carousel";
+import { ButtonTransition } from "../../../../components/ButtonTransition";
+import Carousel from "../../../../components/Carousel";
 import { Container, Banner } from "./styles";
-import Console from "../../assets/Console.webp"
-import BannerBottom from "../../assets/BannerBottom.webp"
-import { Button } from "../Button";
+import Console from "../../../../assets/Console.webp";
+import BannerBottom from "../../../../assets/BannerBottom.webp";
+import { Button } from "../../../../components/Button";
 
 export function UpgrateOffers() {
   return (

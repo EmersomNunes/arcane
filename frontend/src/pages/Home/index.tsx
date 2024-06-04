@@ -2,14 +2,14 @@ import { Banner, Container } from "./styles";
 import { Header } from "../../components/Header";
 import { MobileMenu } from "../../components/MobileMenu";
 import banner from "../../assets/banner.webp";
-import { OfferBox } from "../../components/OfferBox";
+import { OfferBox } from "./components/OfferBox";
 import Cyber from "../../assets/Cyber.webp";
-import { BestSellers } from "../../components/BestSellers";
-import { Card } from "../../components/Card";
+import { BestSellers } from "./components/BestSellers";
+import { Card } from "./components/Card";
 import Console from "../../assets/Console.webp";
-import { OtherOffers } from "../../components/OtherOffers";
-import { UpgrateOffers } from "../../components/UpgrateOffer";
-import { TrandingGames } from "../../components/TrendingGames";
+import { OtherOffers } from "./components/OtherOffers";
+import { UpgrateOffers } from "./components/UpgrateOffer";
+import { TrandingGames } from "./components/TrendingGames";
 import { Footer } from "../../components/Footer";
 import BackgroundBeforeFooter from "../../assets/BackgroundBeforeFooter.webp"
 

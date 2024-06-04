@@ -1,8 +1,8 @@
-import { Button } from "../Button";
-import { ButtonTransition } from "../ButtonTransition";
-import Carousel from "../Carousel";
+import { Button } from "../../../../components/Button";
+import { ButtonTransition } from "../../../../components/ButtonTransition";
+import Carousel from "../../../../components/Carousel";
 import { Container } from "./styles";
-import Console from "../../assets/Console.webp";
+import Console from "../../../../assets/Console.webp";
 
 export function BestSellers() {
   return (

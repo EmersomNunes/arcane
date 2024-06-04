@@ -1,6 +1,6 @@
 import { OfferBox } from "../OfferBox";
 import { Container } from "./styles";
-import Kira from "../../assets/Kira.webp";
+import Kira from "../../../../assets/Kira.webp";
 
 export function OtherOffers() {
   return (

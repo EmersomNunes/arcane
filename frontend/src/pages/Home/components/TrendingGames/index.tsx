@@ -1,8 +1,8 @@
-import { ButtonTransition } from "../ButtonTransition";
-import Carousel from "../Carousel";
+import { ButtonTransition } from "../../../../components/ButtonTransition";
+import Carousel from "../../../../components/Carousel";
 import { Container } from "./Styles";
-import Console from "../../assets/Console.webp"
-import { Button } from "../Button";
+import Console from "../../../../assets/Console.webp";
+import { Button } from "../../../../components/Button";
 
 export function TrandingGames() {
   return(
