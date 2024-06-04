@@ -2,7 +2,7 @@ import { Button } from "../Button";
 import { ButtonTransition } from "../ButtonTransition";
 import Carousel from "../Carousel";
 import { Container } from "./styles";
-import Console from "../../assets/Console.webp"
+import Console from "../../assets/Console.webp";
 
 export function BestSellers() {
   return (

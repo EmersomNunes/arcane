@@ -3,8 +3,6 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Container } from './styles';
 import { GrNext, GrPrevious } from "react-icons/gr";
-import Console from "../../assets/Console.webp"
-import { Button } from '../Button';
 
 interface CarouselTypes {
   image: string;

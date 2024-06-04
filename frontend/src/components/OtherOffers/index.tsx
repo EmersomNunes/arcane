@@ -1,7 +1,6 @@
 import { OfferBox } from "../OfferBox";
 import { Container } from "./styles";
 import Kira from "../../assets/Kira.webp";
-import Carousel from "../Carousel";
 
 export function OtherOffers() {
   return (
