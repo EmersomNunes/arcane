@@ -4,8 +4,9 @@ export const Container = styled.div`
   background-color: black;
   color: ${({ theme }) => theme.COLORS.WHITE};  
 
-  > button {
-      width: 13.2rem;
+  button {
+      width: 20rem;
+      height: 3.8rem;
     }
 
   .contain {

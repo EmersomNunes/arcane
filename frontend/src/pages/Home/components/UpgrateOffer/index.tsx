@@ -14,7 +14,7 @@ export function UpgrateOffers() {
           <ButtonTransition title="Ver tudo" />
         </div>
 
-        <div className="carouselConfig">
+        <div className="title">
           <Carousel
             image={Console}
             name="Teste2"

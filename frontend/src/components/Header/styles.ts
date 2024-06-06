@@ -27,6 +27,10 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.WHITE};
       font-weight: bold;
     }
+
+    > button {
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 800px) {

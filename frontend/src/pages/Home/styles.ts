@@ -73,6 +73,7 @@ export const Banner = styled.div`
 
   > div {
       position: absolute;
+      z-index: 55;
       top: 11rem;
       width: 100%;
       padding: 8rem 10rem;

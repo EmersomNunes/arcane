@@ -15,11 +15,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    > button {
-      width: 13.2rem;
-      height: 4rem;
-    }
   }
 
   @media(max-width: 800px) {

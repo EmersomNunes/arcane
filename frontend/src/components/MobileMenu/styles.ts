@@ -5,7 +5,7 @@ export const Container = styled.div`
   width: 100%;
 
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   text-align: center;
   top: 0;
 
